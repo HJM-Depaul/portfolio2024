@@ -1,90 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>HTML + CSS</title>
-    <link rel="stylesheet" href="styles.css" />
-    <!-- icon link -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
-      rel="stylesheet"
-    />
-    <script src="script.js" defer></script>
-    <script src="fade_slide_in.js" defer></script>
-  </head>
-  <body>
-    <!-- Header  -->
-    <header class="header_class">
-      <h3><a href="index.html">Hyukjun Moon Portfolios 4: 44 on 12/4 .</a></h3>
-    </header>
 
-    <!-- Navigation Bar -->
-    <nav class="navigation_bar">
-      <a href="index.html">
-        <video
-          class="logo_class"
-          id="logo_button_id"
-          title="Logo home button HJ Hyukjun Moon"
-          autoplay
-          muted
-        >
-          <source src="images/hj_3.mp4" type="video/mp4" />
-        </video>
-      </a>
-      <ul>
-        <li><a href="projects_collection.html">Projects</a></li>
-        <li><a href="about_me.html">About me</a></li>
-        <li><a href="resources_collection.html">Resources</a></li>
-      </ul>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>HTML + CSS</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- icon link -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <script src="script.js" defer></script>
+  <script src="fade_slide_in.js" defer></script>
+</head>
 
-    <main>
-      <!-- Preview portfolio -->
-      <section class="portfolio_preview_section">
-        <div class="portfolio_preview_serction_wrap">
-          <button
-            class="portfolio_preview_button_Left"
-            id="portfolio_preview_button_Left_id"
-          >
-            <span class="material-symbols-outlined"> chevron_left </span>
-          </button>
-          <iframe
-            scrolling="no"
-            class="portfolio_preview_section_img"
-            id="portfolio_preview_section_img_id"
-            style="width: 40rem; height: 20rem"
-            height="100%"
-            width="100%"
-            src="/images/example.png"
-            alt="Code example"
-            autoplay
-            muted
-            allow="autoplay"
-          ></iframe>
-          <button
-            class="portfolio_preview_button_Right"
-            id="portfolio_preview_button_Right_id"
-          >
-            <span class="material-symbols-outlined"> chevron_right </span>
-          </button>
+<body>
+  <!-- Header  -->
+  <header class="header_class"  id="header_id">
+    <h3><a href="index.html">Hyukjun Moon Portfolios</a></h3>
+  </header>
+
+  <!-- Navigation Bar -->
+  <div class="navigation_bar">
+    <a href="index.html">
+      <video class="logo_class" id="logo_button_id" title="Logo home button HJ Hyukjun Moon" autoplay muted>
+
+        <source src="images/hj_3.mp4" type="video/mp4" />
+      </video>
+    </a>
+
+    <div class="all_links_wrap_class">
+      <div class="dropdown">
+
+        <a href="projects_collection.html" class="dropbtn placed_links">Projects</a>
+
+        <div class="dropDown_content">
+          <a href="">Project 1</a>
+          <a href="">Project 2</a>
+          <a href="">Project 3</a>
+          <a href="">Project 4</a>
         </div>
-      </section>
 
-      <!-- Portfolio details -->
-      <section class="title_Description_section">
-        <h2 id="preview_title_id">Title</h2>
-        <h3 id="preveiw_description_id">Description</h3>
-      </section>
-      <div class="bottom_cussion_class"></div>
-    </main>
+      </div>
 
-    <!-- footer -->
-    <footer class="footer_class">
-      <h3>
-        Fronted Web Class Final Project: Phase 2 - © Copyright 2024 Hyukjun Moon
-      </h3>
-    </footer>
-  </body>
+      <a href="about_me.html" class="placed_links">About me</a>
+      <a href="resources_collection.html" class="placed_links">Resources</a>
+    </div>
+  </div>
+  <main>
+    <!-- Preview portfolio -->
+    <section class="portfolio_preview_section">
+      <div class="portfolio_preview_serction_wrap">
+        <button class="portfolio_preview_button_Left" id="portfolio_preview_button_Left_id">
+          <span class="material-symbols-outlined"> chevron_left </span>
+        </button>
+        <iframe scrolling="no" class="portfolio_preview_section_img" id="portfolio_preview_section_img_id"
+          style="width: 40rem; height: 20rem" height="100%" width="100%" src="/images/example.png" alt="Code example"
+          autoplay muted allow="autoplay"></iframe>
+        <button class="portfolio_preview_button_Right" id="portfolio_preview_button_Right_id">
+          <span class="material-symbols-outlined"> chevron_right </span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Portfolio details -->
+    <section class="title_Description_section">
+      <h2 id="preview_title_id">Title</h2>
+      <h3 id="preveiw_description_id">Description</h3>
+    </section>
+    <div class="bottom_cussion_class"></div>
+  </main>
+
+  <!-- footer -->
+  <footer class="footer_class">
+    <h3>
+      Fronted Web Class Final Project: Phase 2 - © Copyright 2024 Hyukjun Moon
+    </h3>
+  </footer>
+</body>
+
 </html>

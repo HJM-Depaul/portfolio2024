@@ -1,225 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Projects</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
-    <script src="fade_slide_in.js" defer></script>
-    <script src="projectCollerction.js" defer></script>
-  </head>
-  <body>
-    <!-- Header  -->
-    <header class="header_class"><h3><a href="index.html">Hyukjun Moon Portfolios</a></h3></header>
-<p id="p_id">See it works now!</p>
-    <!-- Navigation Bar -->
-    <nav class="navigation_bar">
-      <a href="index.html">
-        <video
-          class="logo_class"
-          id="logo_button_id"
-          title="Logo home button HJ Hyukjun Moon"
-          autoplay
-          muted
-        >
-          <source src="images/hj_3.mp4" type="video/mp4" />
-        </video>
-      </a>
-      <ul>
-        <li><a href="projects_collection.html">Projects</a></li>
-        <li><a href="about_me.html">About me</a></li>
-        <li><a href="resources_collection.html">Resources</a></li>
-      </ul>
-    </nav>
-    <main>
-      <!-- Portfolios -->
-      <section class="allProjects_section_class" id="allProjects_section_id">
-        <div class="iframe_grid_wrap_class">
-          <iframe
-            scrolling="no"
-            class="porjectPage_portfolio_iframe_class fade_in from_left slide_in"
-            id="porjectPage_portfolio_iframe_id"
-            style="width: 40rem; height: 20rem"
-            height="100%"
-            width="100%"
-            src="https://drive.google.com/file/d/1GJpSN39ii04dp4zrayqRTauoVVLLIXfI/preview"
-            alt="Code example"
-            autoplay
-            muted
-            allow="autoplay"
-          ></iframe>
-          <p class="fade_in from_right slide_in">First Portfolio 
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Projects</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+  <script src="fade_slide_in.js" defer></script>
+</head>
+
+<body>
+  <!-- Header  -->
+  <header class="header_class" id="header_id">
+    <h3><a href="index.html">Hyukjun Moon Portfolios</a></h3>
+  </header>
+
+  <!-- Navigation Bar -->
+  <div class="navigation_bar">
+    <a href="index.html">
+      <video class="logo_class" id="logo_button_id" title="Logo home button HJ Hyukjun Moon" autoplay muted>
+
+        <source src="images/hj_3.mp4" type="video/mp4" />
+      </video>
+    </a>
+
+    <div class="all_links_wrap_class">
+      <div class="dropdown">
+
+        <a href="projects_collection.html" class="dropbtn placed_links">Projects</a>
+
+        <div class="dropDown_content">
+          <a href="#portfolio_1">Project 1</a>
+          <a href="#portfolio_2">Project 2</a>
+          <a href="#portfolio_3">Project 3</a>
+          <a href="#portfolio_4">Project 4</a>
+        </div>
+
+      </div>
+
+      <a href="about_me.html" class="placed_links">About me</a>
+      <a href="resources_collection.html" class="placed_links">Resources</a>
+    </div>
+  </div>
+  <main>
+    <h2 class="allProjects_h2_class">All projects with descriptions
+      </br>&lt;Project Title&gt;
+      </br>&lt;Project Description&gt;
+      </br>&lt;Skills Utilized&gt;
+      </br>&lt;Learning Resource&gt;
+    </h2>
+    <!-- Portfolios -->
+    <section class="allProjects_section_class" id="allProjects_section_id">
+      <div class="a_portfolio_gridwrapDiv_class" id="portfolio_1">
+        <iframe scrolling="no"
+          class="porjectPage_portfolio_iframe_class fade_in from_left slide_in firstProjects_iframe"
+          id="porjectPage_portfolio_iframe_id" style="width: 40rem; height: 20rem" height="100%" width="100%"
+          src="https://drive.google.com/file/d/1GJpSN39ii04dp4zrayqRTauoVVLLIXfI/preview" alt="Code example" autoplay
+          muted allow="autoplay"></iframe>
+        <p class="fade_in from_right slide_in" id="portfolio_p_id">Portfolio 1
           </br>Learned & Used concepts of fundamental HTML and CSS rules
-        </br>-HTML: Semantic HTML Tags/Attributes/Elements
-        </br>-CSS: Box Model/Selectors/Properties/Media Queries/Animations/Grid
-        </br>
-        </br>from NYPL Fronted Web Class (Online): Phase 1 
-        
+          </br>-HTML: Semantic HTML Tags/Attributes/Elements
+          </br>-CSS: Box Model/Selectors/Properties/Media Queries/Animations/Grid
+          </br>
+          </br>from NYPL Fronted Web Class (Online): Phase 1
 
         </p>
-          
-        </div>
-<!-- 
-        <div class="iframe_grid_wrap_class">
-          <p class="fade_in from_left slide_in">
-           Second Portfolio (1: Code)
+
+      </div>
+
+      <div class="a_portfolio_gridwrapDiv_class" id="portfolio_2">
+        <p class="fade_in from_left slide_in">
+          Portfolio 2 (Code)
           </br>Learned & Used Basic Syntax of JavaScript and applying on HTML uisng CSS
-        </br>-JavaScript: Data types/Operators/Objects/Classes/
-      </br>Conditions/Loops/Functions/DOM Manipulation/Event Handlers/CRUD
-      </br>
-    </br>from NYPL Fronted Web Class (Online): Phase 2
-          </p>
+          </br>-JavaScript: Data types/Operators/Objects/Classes/
+          </br>Conditions/Loops/Functions/DOM Manipulation/Event Handlers/CRUD
+          </br>
+          </br>from NYPL Fronted Web Class (Online): Phase 2
+        </p>
 
-          <iframe
-            scrolling="no"
-            class="porjectPage_portfolio_iframe_class fade_in from_right slide_in"
-            id="porjectPage_portfolio_iframe_id"
-            style="width: 40rem; height: 20rem"
-            height="100%"
-            width="100%"
-            src="https://drive.google.com/file/d/19z4l7FkBPJqWShlrRpGXN254tatqc8MI/preview"
-            alt="Code example"
-            autoplay
-            muted
-            allow="autoplay"
-          ></iframe>
-        </div>
+        <iframe scrolling="no" class="porjectPage_portfolio_iframe_class fade_in from_right slide_in"
+          id="porjectPage_portfolio_iframe_id" style="width: 40rem; height: 20rem" height="100%" width="100%"
+          src="https://drive.google.com/file/d/1NdTlpD9g0AbyFRbixx88IPD2MjzY5XS9/preview" alt="Code example" autoplay
+          muted allow="autoplay"></iframe>
+      </div>
 
 
 
-        <div class="iframe_grid_wrap_class">
-          <iframe
-            scrolling="no"
-            class="porjectPage_portfolio_iframe_class fade_in from_left slide_in"
-            id="porjectPage_portfolio_iframe_id"
-            style="width: 40rem; height: 20rem"
-            height="100%"
-            width="100%"
-            src="https://drive.google.com/file/d/1zIwEREmvohS-UDQpA7WCkMON_I_mkf-n/preview"
-            alt="Code example"
-            autoplay
-            muted
-            allow="autoplay"
-          ></iframe>
-          <p class="fade_in from_right slide_in">
-            Second Portfolio (2: Header & Navigation bar)
-            </br>Learned & Applied JavaScript animation and variety ways of displaying elements on screen
+      <div class="a_portfolio_gridwrapDiv_class">
+        <iframe scrolling="no" class="porjectPage_portfolio_iframe_class fade_in from_left slide_in"
+          id="porjectPage_portfolio_iframe_id" style="width: 40rem; height: 20rem" height="100%" width="100%"
+          src="https://drive.google.com/file/d/1zIwEREmvohS-UDQpA7WCkMON_I_mkf-n/preview" alt="Code example" autoplay
+          muted allow="autoplay"></iframe>
+        <p class="fade_in from_right slide_in">
+          Portfolio 2 (Header & Navigation bar)
+          </br>Learned & Applied JavaScript animation and variety ways of displaying elements on screen
           </br>-Hamburger menu/Media queries/Drop down menu/Buttons-EventListners/
           </br>-JavaScript: Fade-in Animation/Hide & Appear elements/Responsive scroll view effects
           </br>
-        </br> from NYPL Fronted Web Class (Online): Phase 2
-          </p>
-        </div>
+          </br> from NYPL Fronted Web Class (Online): Phase 2
+        </p>
+      </div>
 
-            <div class="iframe_grid_wrap_class">
-          <p class="fade_in from_left slide_in">
-            Second Portfolio (3: Footer)
+      <div class="a_portfolio_gridwrapDiv_class">
+        <p class="fade_in from_left slide_in">
+          Portfolio 2 (Footer)
           </br>Learned & Used advanced CSS
           </br>-HTML&CSS: Advanced Grid Properties/Implemented Icons
-        </br>
-      </br> from NYPL Fronted Web Class (Online): Phase 2
-          </p>
+          </br>
+          </br> from NYPL Fronted Web Class (Online): Phase 2
+        </p>
 
-          <iframe
-            scrolling="no"
-            class="porjectPage_portfolio_iframe_class fade_in from_right slide_in"
-            id="porjectPage_portfolio_iframe_id"
-            style="width: 40rem; height: 20rem"
-            height="100%"
-            width="100%"
-            src="https://drive.google.com/file/d/19z4l7FkBPJqWShlrRpGXN254tatqc8MI/preview"
-            alt="Code example"
-            autoplay
-            muted
-            allow="autoplay"
-          ></iframe>
-        </div>
+        <iframe scrolling="no" class="porjectPage_portfolio_iframe_class fade_in from_right slide_in"
+          id="porjectPage_portfolio_iframe_id" style="width: 40rem; height: 20rem" height="100%" width="100%"
+          src="https://drive.google.com/file/d/19z4l7FkBPJqWShlrRpGXN254tatqc8MI/preview" alt="Code example" autoplay
+          muted allow="autoplay"></iframe>
+      </div>
 
-         <div class="iframe_grid_wrap_class">
-          <iframe
-            scrolling="no"
-            class="porjectPage_portfolio_iframe_class fade_in from_left slide_in"
-            id="porjectPage_portfolio_iframe_id"
-            style="width: 40rem; height: 20rem"
-            height="100%"
-            width="100%"
-            src="https://drive.google.com/file/d/1wQQ3j1Bk8AzQxfskuSxzzi7y6dGcAS1j/preview"
-            alt="Code example"
-            autoplay
-            muted
-            allow="autoplay"
-          ></iframe>
-          <p class="fade_in from_right slide_in">
-            Third Portfolio (1: Home page)
-            </br>Learned & Applied JavaScript animation and variety ways of displaying elements on screen
+      <div class="a_portfolio_gridwrapDiv_class" id="portfolio_3">
+        <iframe scrolling="no" class="porjectPage_portfolio_iframe_class fade_in from_left slide_in"
+          id="porjectPage_portfolio_iframe_id" style="width: 40rem; height: 20rem" height="100%" width="100%"
+          src="https://drive.google.com/file/d/1wQQ3j1Bk8AzQxfskuSxzzi7y6dGcAS1j/preview" alt="Code example" autoplay
+          muted allow="autoplay"></iframe>
+        <p class="fade_in from_right slide_in">
+          Portfolio 3(Home page)
+          </br>Learned & Applied JavaScript animation and variety ways of displaying elements on screen
           </br>-JavaScript: Transform Animation/Buttons-EventListners
           </br>-HTML: Embeded HTML tags- using URL parameters
           </br>
-        </br> from NYPL Fronted Web Class (Online): Phase 2
-          </p>
-        </div>
+          </br> from NYPL Fronted Web Class (Online): Phase 2
+        </p>
+      </div>
 
 
 
-        <div class="iframe_grid_wrap_class">
-          <p class="fade_in from_left slide_in">
-            Third Portfolio (2: Projects page)
+      <div class="a_portfolio_gridwrapDiv_class">
+        <p class="fade_in from_left slide_in">
+          Portfolio 3 (Projects page)
           </br>Learned & Applied JavaScript animation and variety ways of displaying elements on screen
           </br>-JavaScript: Advanced JavaScript animation - fade-in&slide-in/Responsive scroll view effects
-        </br>
-      </br> from NYPL Fronted Web Class (Online): Phase 2
-          </p>
+          </br>
+          </br> from NYPL Fronted Web Class (Online): Phase 2
+        </p>
 
-          <iframe
-            scrolling="no"
-            class="porjectPage_portfolio_iframe_class fade_in from_right slide_in"
-            id="porjectPage_portfolio_iframe_id"
-            style="width: 40rem; height: 20rem"
-            height="100%"
-            width="100%"
-            src="https://drive.google.com/file/d/1HYpFrunGodYARe61KdJJI9RqS4uE9pfg/preview"
-            alt="Code example"
-            autoplay
-            muted
-            allow="autoplay"
-          ></iframe>
-        </div>
+        <iframe scrolling="no" class="porjectPage_portfolio_iframe_class fade_in from_right slide_in"
+          id="porjectPage_portfolio_iframe_id" style="width: 40rem; height: 20rem" height="100%" width="100%"
+          src="https://drive.google.com/file/d/1HYpFrunGodYARe61KdJJI9RqS4uE9pfg/preview" alt="Code example" autoplay
+          muted allow="autoplay"></iframe>
+      </div>
 
 
-        <div class="iframe_grid_wrap_class">
-          <iframe
-            scrolling="no"
-            class="porjectPage_portfolio_iframe_class fade_in from_left slide_in"
-            id="porjectPage_portfolio_iframe_id"
-            style="width: 40rem; height: 20rem"
-            height="100%"
-            width="100%"
-            src="https://drive.google.com/file/d/12aCz6WTcLpCAeXN7vHf11UrflECufaQ2/preview"
-            alt="Code example"
-            autoplay
-            muted
-            allow="autoplay"
-          ></iframe>
-          <p class="fade_in from_right slide_in">
-            Third Portfolio (3: Other pages & Overall)
-            </br>Learned & Applied JavaScript animation and variety ways of displaying elements on screen
+      <div class="a_portfolio_gridwrapDiv_class">
+        <iframe scrolling="no" class="porjectPage_portfolio_iframe_class fade_in from_left slide_in"
+          id="porjectPage_portfolio_iframe_id" style="width: 40rem; height: 20rem" height="100%" width="100%"
+          src="https://drive.google.com/file/d/12aCz6WTcLpCAeXN7vHf11UrflECufaQ2/preview" alt="Code example" autoplay
+          muted allow="autoplay"></iframe>
+        <p class="fade_in from_right slide_in">
+          Portfolio 3 (Other pages & Overall)
+          </br>Learned & Applied JavaScript animation and variety ways of displaying elements on screen
           </br>-CSS: Applied Analogous Color Palette/Rise animation
           </br>-JavaScript: Advanced JavaScript animation - fade-in/Responsive scroll view effects
           </br>
-        </br> from NYPL Fronted Web Class (Online): Phase 2
-          </p>
-        </div> -->
+          </br> from NYPL Fronted Web Class (Online): Phase 2
+        </p>
+      </div>
 
 
-      </section>
-      <div class="bottom_cussion_class"></div>
-    </main>
-    <!-- footer -->
-    <footer class="footer_class">
-      <h3>Fronted Web Class Final Project: Phase 2 - 2024 - by Hyukjun Moon</h3>
-    </footer>
-  </body>
+    </section>
+    <div class="bottom_cussion_class"></div>
+  </main>
+  <!-- footer -->
+  <footer class="footer_class">
+    <h3>Fronted Web Class Final Project: Phase 2 - © Copyright 2024 Hyukjun Moon</h3>
+  </footer>
+</body>
+
 </html>
