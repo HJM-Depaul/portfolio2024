@@ -102,3 +102,4 @@ preview_buttonRight.addEventListener("click", (event) => {
   }
   loadPreviewInfo(allProjectsPreview[randomIndex]);
 });
+
