@@ -1,0 +1,1040 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin: 0;
+  text-align: center;
+  color: #240e07;
+  padding: 3.125rem;
+  margin-bottom: 0.5rem;
+}
+h2 {
+  color: #27100d;
+  font-weight: 400;
+  margin: 0;
+  padding: 2.5rem;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 700 !important;
+}
+h4 {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+ul {
+  padding-left: 1rem;
+}
+
+footer {
+  background-color: #323232;
+}
+
+/* Header */
+.header_div_class a:hover {
+  color: red;
+  text-decoration: none;
+}
+.header_div_class a {
+  text-decoration: underline;
+  color: #842029;
+}
+
+.header_div_class {
+  background-color: #f2dede;
+  padding: 0.313rem;
+  margin: 0;
+}
+.header_banner_p {
+  text-align: center;
+  color: #842029;
+  font: 1rem;
+
+  font-weight: 400;
+  margin: 0;
+}
+
+/* Align nav image and dropdown menu */
+
+.dropdown_allwraped_class {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  margin-right: 5%;
+}
+.dropbtn_li {
+  white-space: nowrap;
+}
+
+/* Navigation bar */
+.nav_banner_img {
+  float: left;
+}
+.navbar_div_class {
+  /* box-sizing fixes the position:fixed altering width issue! */
+  box-sizing: border-box;
+  display: flex;
+
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  background-color: #323232;
+  font-weight: 300;
+  font-size: 0.8rem;
+  color: white;
+}
+.dropdown_allwraped_class,
+.nav_banner_img {
+  animation: 1s rightToleft;
+}
+
+/* Arrow down */
+.arrow_down {
+  width: 0;
+  height: 0;
+  padding-bottom: 0.188rem;
+  border-left: 0.313rem solid transparent;
+  border-right: 0.313rem solid transparent;
+  border-top: 0.313rem solid white;
+}
+
+/* Align arrow and dropdown menu */
+.dropbtn_li .arrow_down {
+  display: inline-block;
+}
+
+/* Dropdown menu */
+.navbar_div_class li {
+  list-style-type: none;
+}
+.dropbtn_li {
+  border: none;
+  left: 0;
+}
+.dropbtn_li a {
+  color: white;
+  text-decoration: none;
+}
+.dropbtn_li:visited {
+  text-decoration-color: white;
+}
+
+/* drop down content text */
+.dropdown_content_class {
+  display: none;
+  position: absolute;
+  background-color: white;
+  color: black;
+  min-width: 11.875rem;
+  box-shadow: 0.625rem 0.5rem 1rem 0 rgba(33, 37, 41, 0.75);
+  z-index: 1;
+  padding: 0.625rem 0.625rem;
+  margin-top: 0.625rem;
+}
+.dropdown_content_class a {
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  padding: 0.438rem 0.438rem;
+  color: #697a90;
+}
+
+.dropdown_content_class a:hover {
+  color: #842029;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(0.313rem);
+}
+.dropdown_nav_class:hover .dropdown_content_class {
+  display: block;
+  animation: 1.5s fadeIn;
+}
+
+.dropdown_nav_class:hover .dropbtn_li a {
+  color: #9a1a21;
+}
+.dropdown_nav_class:hover .arrow_down {
+  border-top: 0.313rem solid #9a1a21;
+}
+
+/* Intersection Observer action Head and Navigation bar */
+/* JS window.addEventListener */
+.fixedTop {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  max-width: 100%;
+  top: 0;
+  margin: 0 !important;
+  background-color: rgba(37, 37, 37, 0.95);
+  z-index: 100;
+}
+.fixedTop2 {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  max-width: 100%;
+  top: 4.688rem;
+  margin: 0 !important;
+  background-color: rgba(37, 37, 37, 0.95);
+  z-index: 100;
+}
+
+/* Welcome to section */
+.welcome_section_class {
+  text-align: center;
+  margin: auto;
+}
+
+.welcomeBackground_div_class {
+  background-size: cover;
+}
+
+.fiveAcross_Bannder_img_class {
+  display: block;
+  margin: auto;
+  width: 80%;
+  /* animation: 1s fadeIn; */
+}
+.kinetic_banner_img_class {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+.vultr_banner_img_class {
+  display: block;
+  align-items: center;
+  width: 35%;
+  margin: auto;
+}
+
+.welcomeTo_fade_in {
+  animation: 1.5s fadeIn;
+}
+
+/* Tonight's Detail Align */
+.tonightDetail_section {
+  text-align: center;
+  background-color: #dfe4e9;
+  min-height: auto;
+  padding-bottom: 3.125rem;
+}
+
+/* Tonight's Details buttons */
+.button_class {
+  border: 0.125rem solid #c12029;
+  border-radius: 0.25rem;
+  background-color: #323232;
+  border-color: #323232;
+  color: #fff;
+  display: inline-block;
+  font-family: Open Sans, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.188rem;
+  overflow: hidden;
+  padding: 0.5rem 1rem;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.button_class:hover {
+  color: gray;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(0.188rem);
+}
+
+.button_grid_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.563rem;
+  padding-left: 3.125rem;
+  padding-right: 3.125rem;
+}
+
+.gird_lastItem {
+  grid-column: 1 / span 2;
+}
+
+/* Tonight's Teams section */
+.tonightTeams_section {
+  text-align: center;
+  min-height: auto;
+  padding-bottom: 3.125rem;
+}
+.tonightTeam_p_class {
+  padding-bottom: 1.25rem;
+}
+
+.value_buddy_banner_img_class {
+  width: 40%;
+  margin-bottom: -0.625rem;
+}
+
+.oneUp_banner_img_class {
+  width: 15%;
+}
+
+.airTreckRobotics_banner_img_class {
+  width: 30%;
+  margin-bottom: -1.25rem;
+}
+
+.clickQuickConnect_banner_img_class {
+  width: 30%;
+  margin-top: 1.25rem;
+  margin-bottom: 0.625rem;
+}
+
+.immersiveHearingTechnologies_banner_img_class {
+  width: 35%;
+  margin-bottom: -0.625rem;
+}
+
+/* Tonight's Judges Section */
+.tonightJudges_section_class {
+  text-align: center;
+  background-color: #323232;
+  color: white;
+  padding-bottom: 1.875rem;
+}
+.tonightJudges_h2_class {
+  color: white;
+}
+
+.tonightJudges_grid_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 2rem;
+}
+
+/* BRIAN LUFTMAN figure */
+.judge_figure_1 {
+  margin: auto;
+  width: 60%;
+  height: 80%;
+  overflow: hidden;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.judgeimg_class_1 {
+  width: 100%;
+  height: 100%;
+ 
+}
+
+/* ELIZABETH ROUNSAVALL figure */
+.judge_figure_2{
+  margin: auto;
+  width: 62%;
+  height: 82%;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.judgeimg_class_2{
+  width: 100%;
+  height: 100%;
+}
+
+/* BRIAN EVANS figure */
+.judge_figure_3{
+  margin: auto;
+  width: 60%;
+  height: 80%;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.judgeimg_class_3{
+  width: 100%;
+  height: 100%;
+  transform: scale(1.3);
+}
+
+/* BRIAN POE figure */
+.judge_figure_4 {
+  margin: auto;
+  width: 60%;
+  height: 80%;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.judgeimg_class_4{
+  width: 100%;
+  height: 100%;
+}
+
+/* Thanks Sponsers section */
+.thanks_sponsors_section {
+  text-align: center;
+  padding-top: 3.125rem;
+}
+.thanksSponsors_fiveAcross_Bannder_img_class {
+  width: 55%;
+  margin-bottom: -0.625rem;
+}
+.thanks_sponsors_h2 {
+  font-weight: 800;
+  font-size: 2rem;
+  color: black;
+}
+
+.thanksSponsors_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 3.125rem;
+  grid-gap: 3.125rem;
+}
+
+.thanks_kinetic_banner_img_class {
+  margin: auto;
+  width: 60%;
+}
+.thanks_vultr_banner_img_class {
+  margin: auto;
+  width: 60%;
+  margin-bottom: -0.625rem;
+}
+.thanks_apax_software_banner_img_class {
+  margin: auto;
+  width: 40%;
+}
+.thanks_ukCommunicationInformation_banner_img_class {
+  margin: auto;
+  width: 70%;
+}
+.thanks_ukCollege_eClub_banner_img_class {
+  margin: auto;
+  width: 50%;
+}
+.thanks_team_kentucky_banner_img_class {
+  margin: auto;
+  width: 50%;
+}
+.thanks_spectrum_reach_banner_img_class {
+  margin: auto;
+  width: 50%;
+}
+.thanks_west_sixth_brewing_logo_img_class {
+  margin: auto;
+  width: 50%;
+}
+
+/* Experience Even More section */
+.experienceMore_section {
+  background: #323232;
+  color: white;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding-bottom: 1.875rem;
+}
+.experienceMore_h1 {
+  color: white;
+}
+.expMore_fiveAcross_banner_img_class {
+  display: block;
+  margin: auto;
+  width: 30%;
+  padding-bottom: 1.25rem;
+}
+
+.expMore_awesomeInc_podcast_banner_img_class {
+  display: block;
+  margin: auto;
+  width: 15%;
+}
+.expMore_fiveAcrossDeepDive_logo_img_class {
+  display: block;
+  margin: auto;
+  width: 15%;
+}
+
+/* Become a Startup Mentor Section */
+.becomeMentor_section {
+  text-align: center;
+}
+.becomeMentor_h2 {
+  color: #c12029;
+  font-weight: 600;
+  margin-bottom: 1.875rem;
+  padding-bottom: 4.375rem;
+}
+.becomeMentor_background_div_class {
+  background-size: cover;
+  padding-bottom: 6.25rem;
+}
+
+/* footer section */
+.footer_class {
+  display: flex;
+  background-color: #323232;
+}
+.footer_class a:visited,
+a,
+li {
+  color: #d1d2d4;
+  text-decoration: none;
+  text-decoration-color: white;
+  padding-bottom: 0.625rem;
+  font-weight: 100;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+.footer_Logo_div_class {
+  text-align: left;
+  margin-left: -2rem;
+}
+.footer_Logo_div_class li {
+  list-style-type: none;
+}
+.footer_p {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 550;
+  text-transform: uppercase !important;
+
+  padding: 0.625rem 0.625rem 0.625rem 0;
+}
+.footer_container_class {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.563rem;
+
+  margin-left: 15%;
+  margin-right: 20%;
+}
+
+/* footer Logo With Info section*/
+/* .footerLogoWithInfo li {
+  
+} */
+
+/* footer Quicklins container */
+.footerQuickLinks_container,
+.footerCourses_container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  text-align: left;
+}
+
+/*Footer Sponsor banner container grid */
+.footer_sponsorsBanner_container_class {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1.563rem;
+  margin-left: -0.313;
+}
+
+.footer_awesomeInc_logo_class {
+  width: 13.75rem;
+}
+
+/* footer sponsor banners size*/
+.footer_sponsor_Kinetic_banner_class {
+  width: 9.375rem;
+  margin-top: -1.875rem;
+}
+.footer_sponsor_ApaxSoftware_banner_class {
+  width: 9.375rem;
+  margin-top: -2.5rem;
+}
+.footer_sponsor_TeamKentuckyCabinet_banner_class {
+  width: 9.375rem;
+}
+.footer_soponser_Commerce_Lexington_banner_class {
+  width: 9.375rem;
+}
+
+/* footer copyright section */
+.footer_copyright_Sns_container {
+  display: flex;
+  background-color: #323232;
+
+  grid-column: 1 / -1;
+  padding-top: 1.25rem;
+  padding-bottom: 1.875rem;
+}
+.footer_copyright_left {
+  float: left;
+  margin-top: 0.625rem;
+}
+
+.footer_SNS_right {
+  float: right;
+  margin-left: auto;
+  margin-right: 0.625rem;
+}
+
+.footer_button_class {
+  margin-top: 1.25rem;
+  border: 0.125rem solid #c12029;
+  border-radius: 0.25rem;
+  background-color: #c12029;
+  border-color: #c12029;
+  color: #fff;
+  font-size: 1rem;
+  overflow: hidden;
+  padding: 0.5rem 1rem;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.footer_button_class:hover {
+  color: gray;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer_copyright_Sns_container a {
+  padding: 0.625rem;
+}
+.footer_SNS_right a {
+  font-size: x-large;
+  padding: 0.625rem;
+}
+
+/* Js css class */
+.invisible {
+  display: none;
+}
+
+.showDiv {
+  background-color: #c12029;
+}
+
+/* fade_in CSS */
+.fade_in {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+.fade_in.appear {
+  opacity: 1;
+}
+
+@keyframes rightToleft {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(1%);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hamburgerMenu_allwrapped_class {
+  display: none;
+}
+.below_Nav_hamburgerMenu_allwrapped_class {
+  display: none;
+}
+.hamburger_Nav_class {
+  display: none;
+}
+
+/* Desktop size */
+@media screen and (min-width: 1081px) {
+  /* body {
+    background-color: red;
+  } */
+  .hamburgerMenu_allwrapped_class {
+    display: none;
+  }
+  .below_Nav_hamburgerMenu_allwrapped_class {
+    display: none;
+  }
+  .hamburger_Nav_class {
+    display: none;
+  }
+
+  .nav_banner_img {
+    padding-left: 5rem;
+    margin-top: 0.5rem;
+  }
+
+  .dropdown_nav_class {
+    padding-left: 0.625rem;
+    margin-top: 0.5rem;
+  }
+}
+
+/* Mobile size */
+@media only screen and (max-width: 767px) {
+
+  /* (mobile)dropdown Menu */
+  .dropdown_allwraped_class {
+    display: none;
+  }
+  .nav_banner_img {
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  /* (mobile)hamburger Menu */
+  .hamburgerMenu_allwrapped_class {
+    display: flex;
+    margin-left: auto;
+    margin-right: 0.938rem;
+  }
+  .dropdown_HamburgerMenu_class {
+    display: block;
+    margin: auto;
+    float: right;
+    color: white;
+    background-color: #323232;
+    border: 0.031rem solid;
+    animation: 1s rightToleft;
+  }
+  .dropdown_HamburgerMenu_class:hover {
+    cursor: pointer;
+  }
+
+  /* (mobile)below navigation bar for hamburger menu */
+
+  .below_Nav_hamburgerMenu_allwrapped_style {
+    background-color: #323232;
+    display: flex;
+  }
+  .hamburger_Nav_style {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    border-top: 0.2rem solid gray;
+    width: 95%;
+    margin-left: 2.5%;
+  }
+  .hamburger_Nav_style li {
+    list-style-type: none;
+    border-bottom: 0.1rem solid gray;
+    padding: 3%;
+    margin-top: -1%;
+    animation: 1s rightToleft;
+  }
+  .hamburger_Nav_style a {
+    margin-left: 2.5%;
+    text-align: center;
+  }
+  .hamburger_Nav_style a:hover {
+    color: #9a1a21;
+  }
+  .hamburger_Nav_style button {
+    display: flex;
+    float: right;
+    margin-top: -0.156rem;
+    background-color: #323232;
+    color: white;
+    border: 0.05rem solid white;
+    cursor: pointer;
+  }
+  /* (mobile)hamburger dropdown menu */
+  .dropdown_on_Hamburger_wrap {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 5%;
+  }
+  .dropdown_on_Hamburger_wrap a {
+    text-align: left;
+    margin-left: 10%;
+    padding: 0.125rem;
+  }
+  .invisible {
+    display: none;
+  }
+
+  /* (mobile)Tonight's Details Section */
+  .tonightDetails_div button {
+    font-size: 0.8rem;
+  }
+  /* (mobile)Tonight's Teams Section */
+  .value_buddy_banner_img_class {
+    width: 70%;
+    margin-bottom: -0.625rem;
+  }
+
+  .oneUp_banner_img_class {
+    width: 35%;
+  }
+
+  .airTreckRobotics_banner_img_class {
+    width: 70%;
+    margin-bottom: -1.25rem;
+  }
+
+  .clickQuickConnect_banner_img_class {
+    width: 50%;
+    margin-top: 1.25rem;
+    margin-bottom: 0.625rem;
+  }
+
+  .immersiveHearingTechnologies_banner_img_class {
+    width: 70%;
+    margin-bottom: -0.625rem;
+  }
+
+  /* (mobile)tonight judges section */
+  .tonightJudges_grid_container {
+    display: block;
+  }
+
+  /* (mobile)BRIAN LUFTMAN figure */
+  .judge_figure_1 {
+    margin: auto;
+    width: 70%;
+    height: 60%;
+    border-radius: 50%;
+
+    overflow: hidden;
+  }
+
+  .judgeimg_class_1 {
+    aspect-ratio: 1/ 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* (mobile)ELIZABETH ROUNSAVALL figure */
+  .judge_figure_2 {
+    margin: auto;
+    width: 70%;
+    height: 60%;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  .judgeimg_class_2 {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/ 1;
+  }
+
+  /* (mobile)BRIAN EVANS figure */
+  .judge_figure_3 {
+    margin: auto;
+    width: 70%;
+    height: 60%;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  .judgeimg_class_3 {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/ 1;
+  }
+
+  /* (mobile)BRIAN POE figure */
+  .judge_figure_4{
+    margin: auto;
+    width: 70%;
+    height: 60%;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  .judgeimg_class_4 {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/ 1;
+  }
+  /* (mobile)Thanks sponsors */
+  .thanks_sponsors_h2 {
+    font-size: large;
+  }
+  .thanksSponsors_container {
+    padding: 5%;
+    grid-gap: 3%;
+    padding-bottom: 5rem;
+  }
+  .thanks_kinetic_banner_img_class {
+    margin: auto;
+    width: 100%;
+  }
+  .thanks_vultr_banner_img_class {
+    margin: auto;
+    width: 100%;
+  }
+  .thanks_apax_software_banner_img_class {
+    margin: auto;
+    width: 70%;
+  }
+  .thanks_ukCommunicationInformation_banner_img_class {
+    margin: auto;
+    width: 100%;
+    height: 50%;
+  }
+  .thanks_ukCollege_eClub_banner_img_class {
+    margin: auto;
+    width: 80%;
+  }
+  .thanks_team_kentucky_banner_img_class {
+    margin: auto;
+    width: 80%;
+  }
+  .thanks_spectrum_reach_banner_img_class {
+    margin: auto;
+    width: 80%;
+  }
+  .thanks_west_sixth_brewing_logo_img_class {
+    margin: auto;
+    width: 80%;
+  }
+
+  /* (mobile) Experience Even More section */
+
+  .expMore_awesomeInc_podcast_banner_img_class {
+    display: block;
+    margin: auto;
+    width: 30%;
+  }
+  .expMore_fiveAcrossDeepDive_logo_img_class {
+    display: block;
+    margin: auto;
+    width: 30%;
+  }
+
+  /* (mobile) Become Mentor section */
+  .becomeMentor_section button {
+    width: 80%;
+  }
+
+  /* (mobile) Footer section*/
+  .footer_container_class {
+    display: block;
+  }
+  .footer_Logo_div_class {
+    display: block;
+    text-align: center;
+   margin: auto;
+  }
+  /* .footer_awesomeInc_logo_class {
+  } */
+  .footer_Logo_div_class li {
+    font-size: 1rem;
+    text-align: left;
+  }
+  .footer_Logo_div_class a {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+  .footer_Logo_div_class button {
+    font-size: 1.3rem;
+    padding: 1rem;
+  }
+  .footer_quickLinks_div_class {
+    display: inline-block;
+  }
+  .footer_courses_div {
+    display: inline-block;
+  }
+  .footer_sponsorsBanners_div {
+    display: inline-block;
+    text-align: center;
+  }
+  .footer_copyright_Sns_container {
+    display: grid;
+
+    margin: auto;
+  }
+  .footer_copyright_left {
+    display: grid;
+  }
+  /* .footer_copyright_left a {
+  } */
+  .footer_SNS_right {
+    margin-right: auto;
+  }
+  /* .footer_SNS_right a {
+  } */
+
+  /* (mobile)footer sponsor banners size*/
+  .footer_sponsor_Kinetic_banner_class {
+    width: 80%;
+    margin-top: -5rem;
+    margin-bottom: -5rem;
+  }
+  .footer_sponsor_ApaxSoftware_banner_class {
+    width: 80%;
+    padding: 1rem;
+    margin: auto;
+    margin-left: -1rem;
+  }
+  .footer_sponsor_TeamKentuckyCabinet_banner_class {
+    width: 50%;
+    margin: auto;
+    padding: 1rem;
+  }
+  .footer_soponser_Commerce_Lexington_banner_class {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+/* Tablet size */
+@media only screen and (min-width: 768px) and (max-width: 1081px) {
+  /* body {
+    background-color: blue;
+  } */
+  .hamburgerMenu_allwrapped_class {
+    display: none;
+  }
+
+  .below_Nav_hamburgerMenu_allwrapped_class {
+    display: none;
+  }
+  .hamburger_Nav_class {
+    display: none;
+  }
+
+  .nav_banner_img {
+    padding-left: 3rem;
+    margin-top: 0.5rem;
+  }
+
+  .dropdown_nav_class {
+    padding-left: 0.625rem;
+    margin-top: 0.5rem;
+  }
+  .dropbtn_li a {
+    font-size: 0.7rem;
+    margin: -0.938rem;
+    font-weight: 600;
+  }
+  .arrow_down {
+    margin-left: 0.938rem;
+  }
+
+  .dropdown_content_class a {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    padding: 0.313rem 0.313rem;
+    color: #697a90;
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+}

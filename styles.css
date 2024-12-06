@@ -190,10 +190,12 @@ body {
 /* @@@@@@@@@@@@@@@@ */
 /* Projects page */
 /* @@@@@@@@@@@@@@@@ */
+.allProjects_main_class{
+  background: #efcdcd;
+}
 .allProjects_h2_class {
   color: #14634b;
-  background: #efcdcd;
-  padding: 2rem;
+
   margin: auto;
   text-align: center;
   font-size: large;
@@ -201,16 +203,14 @@ body {
 
 .allProjects_h2_class::first-line {
   color: #093d2d;
-  background: #efcdcd;
-  padding: 2rem;
   margin: auto;
   text-align: center;
   font-size: x-large;
 }
 
 .a_portfolio_gridwrapDiv_class {
-  background: #efcdcd;
-  padding: 2rem;
+ 
+  padding: 4rem;
   display: grid;
   grid-gap: 2em;
 
@@ -250,6 +250,44 @@ body {
 .from_bottom.appear {
   transform: translateX(0) translateY(0);
   opacity: 1;
+}
+
+#Portfolio_web_Link{
+  color: #4b1463;
+
+}
+#Portfolio_web_Link:visited{
+  text-decoration: none;
+}
+#Portfolio_web_Link:hover, .portfolio_ancreLink_2Link_div a:hover{
+  color: #a3218a;
+  text-decoration: none;
+}
+/* ancreLinks */
+.portfolio_ancreLink_2Link_div{
+  text-align: center;
+  padding-top: 8rem;
+}
+.portfolio_ancreLink_2Link_div a{
+  font-size:xx-large;
+}
+
+/* before-after */
+.a_portfolio_gridwrapDiv_class .before_after_div_class{
+  
+}
+.before_after_div_class p{
+  align-items: center;
+  margin-top: -5rem;
+}
+#before_p_id{
+  margin-left: -3rem;
+}
+#after_p_id{
+  padding-left: 10rem;
+}
+#before_p_id, #after_p_id{
+  width: 100%;
 }
 
 /* @@@@@@@@@@@@@@@@ */
