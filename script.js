@@ -36,7 +36,7 @@ const nav = document.querySelector(".navigation_bar");
 
 // hide header banner
 window.addEventListener("scroll", function () {
-  if (this.scrollY > 50) {
+  if (this.scrollY > 70) {
     headerWrap.classList.add("invisible");
     nav.classList.add("fixedTop");
 
@@ -72,28 +72,40 @@ class Project {
 // Project preview object for home(index) page
 let allProjectsPreview = [
   new Project(
-    "First Potrfolio",
+    "Project 1 Preview",
     "https://drive.google.com/file/d/1M6bOQHtWJtw7ilGT4p7nNa5niCjIm-IK/preview",
-    "Preview picture of first Portfolio",
-    "Learned HTML and CSS through the NYPL online class"
+    "Preview picture of first Project",
+    "Simple HTML & CSS web site"
   ),
   new Project(
-    "Second Portfolio",
-    "https://drive.google.com/file/d/1NdTlpD9g0AbyFRbixx88IPD2MjzY5XS9/preview",
-    "Preview picture of Second Portfolio",
-    "Learned JavaScript through the NYPL online class"
+    "Project 2 Preview",
+    "https://drive.google.com/file/d/183GMOvcuebT1wQJ8LJgsvW-nj0DY9Le0/preview",
+    "Preview picture of second Project",
+    "Identified and fixed deficiencies on the Awesome Inc Program page"
   ),
   new Project(
-    "Third Portfolio",
+    "Project 3 Preview",
     "https://drive.google.com/file/d/12aCz6WTcLpCAeXN7vHf11UrflECufaQ2/preview",
-    "Preview picture of Third Portfolio",
-    "Learned JavaScript through the NYPL online class"
+    "Preview picture of third Project",
+    "Learned and applied advanced JavaScript techniques, combined with advanced HTML and CSS"
   ),
   new Project(
-    "Fourth Temporary iframe",
-    "https://drive.google.com/file/d/12aCz6WTcLpCAeXN7vHf11UrflECufaQ2/preview",
-    "Temporary Embeded YouTube Video - Practice URL parameters",
-    "I hope I can code well!"
+    "Project 4 Preview",
+    "https://drive.google.com/file/d/1nfNBhSycErXP1eMGg67qw94Y-Rd9yTjC/preview",
+    "Preview picture of fourth Project",
+    "Distance Converter : Learned and applied Android Studio, Java, XML, and Gradle"
+  ),
+  new Project(
+    "Project 5 Preview",
+    "https://drive.google.com/file/d/1spVGpNJGY3sSrUYGg-NrEGl1etNF_9bm/preview",
+    "Preview picture of fifth Project",
+    "Note Pad : Learned and applied Android Studio, Java, XML, and Gradle"
+  ),
+  new Project(
+    "Project 6 Preview",
+    "https://drive.google.com/file/d/1qqhdndsTHIAHSj3IwuGl8yMdnWqmIdH3/preview",
+    "Preview picture of sixth Project",
+    "Know Your Government : Learned and applied Android Studio, Java, XML, and Gradle"
   ),
 ];
 
