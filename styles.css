@@ -190,6 +190,11 @@ body {
 /* @@@@@@@@@@@@@@@@ */
 /* Projects page */
 /* @@@@@@@@@@@@@@@@ */
+.allProject_gitHub_h4_class{
+  text-align: center;
+  margin: auto;
+  padding-top: 2rem;
+}
 .allProjects_main_class{
   background: #efcdcd;
 }
@@ -396,7 +401,17 @@ body {
 .bottom_cussion_class {
   padding: 2rem;
 }
+.resource_link_class{
+  text-decoration: none;
 
+}
+.resource_link_class:visited{
+  text-decoration: none;
+  color: blue;
+}
+.resource_link_class:hover{
+  color: #5656ff;
+}
 
 @keyframes fadeIn {
   0% {
