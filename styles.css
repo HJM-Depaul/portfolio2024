@@ -356,10 +356,18 @@ body {
 /* About me page */
 /* @@@@@@@@@@@@@@@@ */
 
+.about_me_main_class{
+  background-color: #cdcdef;
+}
 .allAbout_wrap_class {
   text-align: center;
-  background-color: #cdcdef;
+
   padding: 2rem;
+}
+.about_me_p_class{
+  display: flex;
+  justify-content: center;
+  text-align: left;
 }
 
 .from_bottom {
